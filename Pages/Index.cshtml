@@ -1,0 +1,16 @@
+﻿@page
+@model DependencyInjectionPractise.Pages.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p> @ViewData["TransientData"]</p>
+<p> @ViewData["ScopedData"]</p>
+<p> @ViewData["SingleData"]</p>
+
+<h2>For Other Dependent type of same service</h2>
+
+<p> @ViewData["TransientDataOther"]</p>
+<p> @ViewData["ScopedDataOther"]</p>
+<p> @ViewData["SingleDataOther"]</p>
+

@@ -1,0 +1,26 @@
+﻿
+The runtime looks for Razor Pages files in the Pages folder by default.
+Index is the default page when a URL doesn't include a page.
+
+the dependency injection (DI) software design pattern,
+which is a technique for achieving Inversion of Control (IoC) between classes and their dependencies.
+
+
+When using a scoped service in a middleware, inject the service into the Invoke or InvokeAsync method.
+Don't inject via constructor injection because it forces the service to behave like a singleton.
+
+Entity Framework contexts are usually added to the service container using the 
+scoped lifetime because web app database operations are normally scoped to the client request. 
+
+
+Create an IServiceScope with IServiceScopeFactory.CreateScope to resolve a scoped service within the app's scope. 
+This approach is useful to access a scoped service at startup to run initialization tasks. 
+
+
+
+We recommend using the built-in container unless you need a specific feature that the built-in container doesn't support, such as:
+Property injection
+Injection based on name
+Child containers
+Custom lifetime management
+Func<T> support for lazy initialization
